@@ -39,5 +39,5 @@ elif [[ -e "$targetFile" ]]; then
     touch "$mountPoint"
     mount -o bind "$targetFile" "$mountPoint"
 else
-    ln -s "$targetFile" "$mountPoint"
+    ln -sf "$targetFile" "$mountPoint"
 fi
